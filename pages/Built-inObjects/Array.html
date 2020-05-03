@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*length*/
+    let array = ['a', 'b'];
+    console.log(array.length);
+    /*通过索引访问数组*/
+    let one = array[0];
+    //a
+    let two = array[array.length - 1];
+    //b
+    /*遍历数组*/
+    array.forEach((item, index, arr) => {
+        console.log(item, index, arr);
+    })
+    /*添加元素到数组的末尾*/
+    let copyArray = array.push('c');
+    /*删除数组末尾的元素*/
+    let delArrayL = array.pop();
+    /*删除数组第一个元素*/
+    let delArrayF = array.shift();
+    /*添加元素到数组的头部 */
+    let copyArr = array.unshift('0');
+    /*找出某个元素在数组中的索引*/
+    let index = array.indexOf('0');
+    /*通过索引删除某个元素*/
+    let removeOne = array.splice(0, 1);
+</script>
+</html>
